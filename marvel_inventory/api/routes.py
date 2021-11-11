@@ -11,7 +11,7 @@ def getdata(current_user_token):
 
 #CREATE CHARACTER ENDPOINT
 
-@api.route('/character', methods = ['POST'])
+@api.route('/characters', methods = ['POST'])
 @token_required
 def create_character(current_user_token):
     name = request.json['name']
