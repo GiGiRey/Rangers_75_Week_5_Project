@@ -75,11 +75,11 @@ class Character(db.Model):
         return (secrets.token_urlsafe())
 
 
-# # Creation of API Schema via the Marshmallow Object
-# class CharacterSchema(ma.Schema):
-#     class Meta:
-#         fields = ['id', 'name','description', 'comics_appeared_in','super_power']
+# Creation of API Schema via the Marshmallow Object
+class CharacterSchema(ma.Schema):
+    class Meta:
+        fields = ['id', 'name','description', 'comics_appeared_in','super_power']
 
 
-# character_schema = CharacterSchema()
-# characters_schema = CharacterSchema(many = True)    
+character_schema = CharacterSchema()
+characters_schema = CharacterSchema(many = True)    

@@ -6,7 +6,7 @@ from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
-# from marvel_inventory.helpers import JSONEncoder
+from marvel_inventory.helpers import JSONEncoder
 from .models import db as root_db, login_manager, ma
 
 app = Flask(__name__)
@@ -26,4 +26,4 @@ migrate = Migrate(app,root_db)
 
 CORS(app)
 
-# app.json_encoder = JSONEncoder
+app.json_encoder = JSONEncoder
