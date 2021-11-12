@@ -1,3 +1,9 @@
+body{
+    background-color: grey;
+    color: black;
+}
+
+
 /*Nav Styles */
 .ct-nav{
     display: flex;
@@ -21,11 +27,11 @@ ul#horizontal-list li, ul#horizontal-list a{
     display:inline;
     text-decoration:none;
     padding: 0.5vw;
-    color:black;
+    color: black;
 }
 
 ul#horizontal-list a:nth-last-child(1){
-    border: 2px solid blue;
+    border: 2px solid yellow;
     border-radius: 11px;
     margin-right: 0.2vw;
 }
@@ -65,8 +71,8 @@ ul#horizontal-list a:nth-last-child(1){
 
 /* Community Section Styles */
 #Drone-image{
-    width: 50%;
-    max-width: 75%;
+    width: 75%;
+    max-width: 100%;
     margin-left: 3vw;
 }
 /* End of Community Section */
@@ -92,7 +98,7 @@ ul#horizontal-list a:nth-last-child(1){
 /* Profile Styles */
 .hero-section{
     height: 95vh;
-    background-image:linear-gradient(to right bottom, rgba(30, 115,172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/drone-profile.jpg);
+    background-image:linear-gradient(to right bottom, rgba(30, 115,172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/character-profile.jpg);
     background-size: cover;
     background-position: 35% 50%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -106,5 +112,5 @@ ul#horizontal-list a:nth-last-child(1){
     padding-top: 20%;
     left: 20rem;
     top: 10rem;
-    color: white;
+    color: whitesmoke;
 }
